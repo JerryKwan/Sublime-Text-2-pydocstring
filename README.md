@@ -11,7 +11,7 @@ for the module, class or function automatically.
 
 Installation
 ------------
-Copy **[docstring.py](https://github.com/JerryKwan/Sublime-Text-2-pydocstring/docstring.py)** into
+Copy **[docstring.py](https://github.com/JerryKwan/Sublime-Text-2-pydocstring/blob/master/docstring.py)** into
 your ST2 User packages folder *(Sublime Text 2 > Preferences > Browse Packages... > User)*
 
 Usage
@@ -27,6 +27,8 @@ I've added this to my User Key Bindings:
 
      { "command": "docstring", "caption": "Generate Docstring"}
 
-![module screenshop](https://github.com/JerryKwan/Sublime-Text-2-pydocstring/module_docstring.PNG)
-![class screenshop](https://github.com/JerryKwan/Sublime-Text-2-pydocstring/class_docstring.PNG)
-![function screenshop](https://github.com/JerryKwan/Sublime-Text-2-pydocstring/function_docstring.PNG)
+![module screenshop](https://github.com/JerryKwan/Sublime-Text-2-pydocstring/blob/master//module_docstring.PNG)
+
+![class screenshop](https://github.com/JerryKwan/Sublime-Text-2-pydocstring/blob/master/class_docstring.PNG)
+
+![function screenshop](https://github.com/JerryKwan/Sublime-Text-2-pydocstring/blob/master/function_docstring.PNG)

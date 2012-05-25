@@ -151,7 +151,7 @@ def parse_declaration(declaration):
 
     tokens = {")": "(",
                 "]": "[",
-                "}": "{"
+                "}": "{",
                 }
 
     # extract typename
@@ -205,28 +205,26 @@ def parse_declaration(declaration):
                     if index > 0:
                         # delete all of the elements between the paired tokens
                         stack = stack[:index]
-                elif c == ',':
-                    # param seperator
-                    # push stack empty char
-                    stack.append(" ")
-                elif c == "=":
-                    # discard assign char
-                    continue
                 else:
                     # push stack
                     stack.append(c)
-        # for c in declaration:
+
         tmp = "".join(stack)
-        bValid = True
-        for t in ["(", ")", "[", "]", "{", "}"]:
-            if tmp.find(t) >=0:
-                bValid = False
-                break
-        print "\nstack is: ", str(stack)
-        if bValid:
-            params = "".join(stack).split()
-        else:
-            params = []
+        print "\nstack is: ", tmp
+        # split with ,
+        stack = tmp.split(",")
+        print "stack is: ", "".join(stack)
+        params = []
+        for w in stack:
+            w = w.strip()
+            if w == "self":
+                # skip self parameter
+                continue
+            index = w.find("=")
+            if index > 0:
+                params.append(w[:index].strip())
+            else:
+                params.append(w)
     else:
         params = []
 
@@ -253,11 +251,7 @@ class DocstringCommand(sublime_plugin.TextCommand):
 
                 else:
                     print "not begin of the file"
-                # parse the line content selected
-                # to process class and function definiton
-                # line_contents = self.view.substr(line)
-                # print "selected contents are: %s"%(line_contents)
-                # print "first word of the line is: %s" %(get_first_word_of_line(line_contents))
+
                 tab_size = self.view.settings().get("tab_size", 4)
                 print "tab_size = ", tab_size
                 flag, declaration_region = get_declaration(self.view, line.begin())

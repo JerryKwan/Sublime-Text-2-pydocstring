@@ -27,8 +27,8 @@ I've added this to my User Key Bindings:
 
      { "command": "docstring", "caption": "Generate Docstring"}
 
-![module screenshop](https://github.com/JerryKwan/Sublime-Text-2-pydocstring/blob/master//module_docstring.PNG)
+![module screenshop](https://github.com/JerryKwan/Sublime-Text-2-pydocstring/raw/master/module_docstring.PNG)
 
-![class screenshop](https://github.com/JerryKwan/Sublime-Text-2-pydocstring/blob/master/class_docstring.PNG)
+![class screenshop](https://github.com/JerryKwan/Sublime-Text-2-pydocstring/raw/master/class_docstring.PNG)
 
-![function screenshop](https://github.com/JerryKwan/Sublime-Text-2-pydocstring/blob/master/function_docstring.PNG)
+![function screenshop](https://github.com/JerryKwan/Sublime-Text-2-pydocstring/raw/master/function_docstring.PNG)

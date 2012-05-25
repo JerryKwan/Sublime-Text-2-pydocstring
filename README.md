@@ -26,3 +26,7 @@ I've added this to my User Key Bindings:
 ...and this to Context.sublime-menu, which allow context menu access:
 
      { "command": "docstring", "caption": "Generate Docstring"}
+
+![module screenshop](https://github.com/JerryKwan/Sublime-Text-2-pydocstring/module_docstring.PNG)
+![class screenshop](https://github.com/JerryKwan/Sublime-Text-2-pydocstring/class_docstring.PNG)
+![function screenshop](https://github.com/JerryKwan/Sublime-Text-2-pydocstring/function_docstring.PNG)

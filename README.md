@@ -20,6 +20,9 @@ Click on the position you want to generate docstring, but do not select anything
 define key bindings or menu entries to use this plugin easy and quick
 
 I've added this to my User Key Bindings:
+
      {"keys": ["ctrl+alt+s"], "command": "docstring"}
+
 ...and this to Context.sublime-menu, which allow context menu access:
+
      { "command": "docstring", "caption": "Generate Docstring"}

@@ -11,7 +11,7 @@ for the module, class or function automatically.
 
 Installation
 ------------
-Copy **[docstring.py](https://github.com/JerryKwan/Sublime-Text-2-pydocstring)** into
+Copy **[docstring.py](https://github.com/JerryKwan/Sublime-Text-2-pydocstring/docstring.py)** into
 your ST2 User packages folder *(Sublime Text 2 > Preferences > Browse Packages... > User)*
 
 Usage

@@ -40,14 +40,14 @@ def construct_docstring(declaration, indent = 0):
         lines = []
         lines.append("'''\n")
         lines.append("@summary: \n")
-        lines.append("\n")
+        # lines.append("\n")
         if typename == "class":
             pass
         elif typename == "def":
             if len(params):
                 for param in params:
                     lines.append("@param %s:\n"%(param))
-                lines.append("\n")
+                # lines.append("\n")
             lines.append("@result: \n")
         lines.append("'''\n")
 
@@ -253,6 +253,8 @@ class DocstringCommand(sublime_plugin.TextCommand):
                     print "not begin of the file"
 
                 tab_size = self.view.settings().get("tab_size", 4)
+                # if tab_size < 4:
+                #     tab_size = 4
                 print "tab_size = ", tab_size
                 flag, declaration_region = get_declaration(self.view, line.begin())
                 print "declaration_region begin = %s, end = %s"%(declaration_region.begin(),
@@ -274,9 +276,12 @@ class DocstringCommand(sublime_plugin.TextCommand):
                                     indent += tab_size
                                 else:
                                     indent += 1
+                        # calculate the real indent
+                        if indent % tab_size :
+                            indent = (indent / tab_size) * tab_size
                         print "indent = %s"%(indent)
                         docstring = construct_docstring(result, indent = indent)
-                        print "docstring is: %s" %(docstring)
+                        print "docstring is: \n%s" %(docstring)
                         # insert class/def docstring
                         # print "row = %s, col = %s"%(self.view.rowcol(declaration_region.end()))
                         self.view.insert(edit, declaration_region.end() + 2, docstring)

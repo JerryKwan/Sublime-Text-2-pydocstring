@@ -280,7 +280,7 @@ class DocstringCommand(sublime_plugin.TextCommand):
                         if indent % tab_size :
                             indent = (indent / tab_size) * tab_size
                         print("indent = %s"%(indent))
-                        docstring = construct_docstring(result, indent = indent)
+                        docstring = construct_docstring(result, indent = int(indent))
                         print("docstring is: \n%s" %(docstring))
                         # insert class/def docstring
                         # print "row = %s, col = %s"%(self.view.rowcol(declaration_region.end()))

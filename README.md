@@ -1,7 +1,7 @@
-Sublime-Text-2-pydocstring
+Sublime-Text-3-pydocstring
 ==========================
 
-a Sublime Text 2 plugin to automatic generate docstring for module/class/function
+a Sublime Text 3 plugin to automatic generate docstring for module/class/function
 
 docstring.py
 ============
@@ -11,8 +11,8 @@ for the module, class or function automatically.
 
 Installation
 ------------
-Copy **[docstring.py](https://github.com/JerryKwan/Sublime-Text-2-pydocstring/blob/master/docstring.py)** into
-your ST2 User packages folder *(Sublime Text 2 > Preferences > Browse Packages... > User)*
+Copy **[docstring.py](https://github.com/xaedes/Sublime-Text-3-pydocstring/blob/master/docstring.py)** into
+your ST2 User packages folder *(Sublime Text 3 > Preferences > Browse Packages... > User)*
 
 Usage
 -----
@@ -27,8 +27,8 @@ I've added this to my User Key Bindings:
 
      { "command": "docstring", "caption": "Generate Docstring"}
 
-![module screenshop](https://github.com/JerryKwan/Sublime-Text-2-pydocstring/raw/master/module_docstring.PNG)
+![module screenshop](https://github.com/xaedes/Sublime-Text-3-pydocstring/raw/master/module_docstring.PNG)
 
-![class screenshop](https://github.com/JerryKwan/Sublime-Text-2-pydocstring/raw/master/class_docstring.PNG)
+![class screenshop](https://github.com/xaedes/Sublime-Text-3-pydocstring/raw/master/class_docstring.PNG)
 
-![function screenshop](https://github.com/JerryKwan/Sublime-Text-2-pydocstring/raw/master/function_docstring.PNG)
+![function screenshop](https://github.com/xaedes/Sublime-Text-3-pydocstring/raw/master/function_docstring.PNG)
